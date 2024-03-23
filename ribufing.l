@@ -1,6 +1,6 @@
 %{
 #include <stdio.h>
-#include "myscanner.h"
+#include "scanner.h"
 %}
 
 %%
