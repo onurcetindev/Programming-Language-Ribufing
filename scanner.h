@@ -1,4 +1,4 @@
-#define EQUALS  1
+#define EQUALS_CHECK  1
 #define SEMICOLON 2
 #define BOOLEAN 3
 #define NUMBER 4
@@ -11,3 +11,5 @@
 #define IF 11
 #define ELSE 12
 #define ELSE_IF 13
+#define NOT_EQUALS_CHECK 14
+#define ASSIGN_OPT 15

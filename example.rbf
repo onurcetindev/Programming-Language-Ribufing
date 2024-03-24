@@ -1,1 +1,4 @@
-raining=false;
+Kaf(raining!=false)
+    raining = true;
+KafKef(raining==true)
+    raining = false;
