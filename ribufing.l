@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "scanner.h"
 %}
-
+%option nounput yylineno
 
 string (\"[^\"]*\")
 character (\'[^\']\')
@@ -54,7 +54,8 @@ eql                    {return EQUALS_CHECK; }
 {else_if}               {return ELSE_IF; }  
 repeat                   {return WHILE; }  
 {switch}                {return SWITCH; }  
-{case}                  {return CASE; }  
+{case}                  {return CASE; } 
+default                 {return DEFAULT; } 
 {comment}               {return COMMENT; }  
 display                   {return PRINT; }  
 \{                      {return CRLBRYCS; }  
