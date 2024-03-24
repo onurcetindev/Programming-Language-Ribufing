@@ -20,6 +20,8 @@ if kaf
 else kef
 else_if kafkef
 
+
+
 comment  \(\*(.|\n)*?\*\)
 
 var [a-zA-Z_$][a-zA-Z0-9_'$]*
@@ -50,7 +52,7 @@ eql                    {return EQUALS_CHECK; }
 {if}                   {return IF; }            
 {else}                 {return ELSE; }          
 {else_if}               {return ELSE_IF; }  
-while                   {return WHILE; }  
+repeat                   {return WHILE; }  
 {switch}                {return SWITCH; }  
 {case}                  {return CASE; }  
 {comment}               {return COMMENT; }  
