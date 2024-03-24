@@ -19,11 +19,14 @@ case match
 if kaf
 else kef
 else_if kafkef
+
 comment  \(\*(.|\n)*?\*\)
+
 var [a-zA-Z_$][a-zA-Z0-9_'$]*
 
 
 %%
+
 \+                      {return ADD; } 
 \-                      {return SUB; } 
 \*                      {return MUL; } 
@@ -59,6 +62,7 @@ display                   {return PRINT; }
 \;                      {return SEMICOLON; }  
 {var}                   {return IDENTIFIER; }  
 [ \t]                   
+
 
 %%
 
