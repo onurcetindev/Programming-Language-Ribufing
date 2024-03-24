@@ -12,22 +12,46 @@ int main() {
     while ((token = yylex())) {
         switch(token) {
             case EQUALS:
-                printf("Token: EQUALS\n");
+                printf("EQUALS ");
                 break;
             case SEMICOLON:
-                printf("Token: SEMICOLON\n");
+                printf("SEMICOLON ");
                 break;
             case BOOLEAN:
-                printf("Token: BOOLEAN\n");
+                printf("BOOLEAN ");
                 break;
             case NUMBER:
-                printf("Token: NUMBER\n");
+                printf("NUMBER ");
                 break;
-            case VARIABLE:
-                printf("Token: VARIABLE\n");
+           case CRLBRYCS:
+		printf("CURLYBRACES ");
+		break; 
+	   case VARIABLE:
+                printf("VARIABLE ");
                 break;
+	   case LEFTPAR:
+		printf("LEFTPAR ");
+		break;
+	   case RIGHTPAR:
+		printf("RIGHTPAR ");
+		break;
+           case NOT:
+		printf("NOT ");
+		break;
+	  case  IF:
+		printf("IF ");
+		break;
+	  case ELSE:
+		printf("ELSE ");
+		break;
+	  case ELSE_IF:
+		printf("ELSE_IF ");
+		break;
+	  case OPERATOR:
+		printf("OPERATOR ");
+		break;		
             default:
-                printf("Token: UNKNOWN\n");
+                printf("UNKNOWN ");
                 break;
         }
     }
