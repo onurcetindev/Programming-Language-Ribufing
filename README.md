@@ -1,8 +1,8 @@
-# Programming-Languages-Ribufing
+# Programming-Language-Ribufing
+#### How to Run
+- cat makefile
+- make scanner
+- ./scanner < example.rbf
 
-**Project Members:**  
-- [Bedirhan Tonğ](https://github.com/bedirhantong)  
-- [Onur Çetin](https://github.com/onurcetindev)  
-- [Şeymhus Alataş](https://github.com/alatasms)  
-
-**Programming Language Name:** Ribufing# Programming-Language-Ribufing
+#### How to reRun
+- make clean
