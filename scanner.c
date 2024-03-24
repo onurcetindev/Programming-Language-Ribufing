@@ -6,7 +6,7 @@ int yylex(); // Flex tarafından oluşturulacak olan lexer fonksiyonunu bildiriy
 extern int yylineno;
 extern char *yytext; // Flex tarafından oluşturulacak olan yytext dizisini kullanacağımızı belirtiyoruz.
 
-char *names[] = {NULL, "EQUALS_CHECK", "SEMICOLON", "BOOLEAN", "NUMBER", "VARIABLE", "LEFTPAR", "RIGHTPAR", "NOT","OPERATOR","CRYLBRYCS","IF","ELSE","ELSE_IF","NOT_EQUALS_CHECK","ASSIGN_OPT"};
+char *names[] = {NULL, "EQUALS_CHECK", "SEMICOLON", "BOOLEAN", "STRING", "IDENTIFIER", "LEFTPAR", "RIGHTPAR", "NOT","PRINT","CRYLBRYCS","IF","ELSE","ELSE_IF","NOT_EQUALS_CHECK","ASSIGN_OPT","TYPE_BOOLEAN","TYPE_DOUBLE","TYPE_STRING","TYPE_INTEGER","COMMENT","AND","OR","ADD","SUB","MUL","DIV","INTEGER","DOUBLE","WHILE","FUNCTION","SWITCH","CASE","INPUT","WRITE","STDIN","STDOUT","CHARACTER"};
 
 int main() {
     int token = yylex();
