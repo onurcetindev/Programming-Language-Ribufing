@@ -2,7 +2,9 @@
 #define SEMICOLON 2
 #define BOOLEAN 3
 #define STRING 4
-#define VARIABLES 5
+
+#define IDENTIFIER 5
+
 #define LEFTPAR 6
 #define RIGHTPAR 7
 #define NOT 8

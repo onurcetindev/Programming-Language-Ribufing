@@ -1,4 +1,26 @@
-Kaf(raining!=false)
-    raining = true;
-KafKef(raining==true)
-    raining = false;
+func ribufing(){
+	int a = 1;
+	double b = 2.5;
+	double c = a+b; 
+	display(c);
+	string err = "Try again";
+			
+
+	boolean cond = true; 
+	while(cond){
+		kaf(c eql 3){
+			display(err);
+		}kafkef(c nql 3.5){
+			cond = false;
+		}kef{
+			c = 3.5;
+		}		
+			
+	}
+	inspect(c){
+		match 3  display("Ribufing already win");
+		match 3.5 display("Akdeniz");
+	}	
+	
+	
+}
