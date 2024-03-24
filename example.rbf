@@ -20,6 +20,7 @@ func ribufing(){
 	inspect(c){
 		match 3  display("Ribufing already win");
 		match 3.5 display("Akdeniz");
+		default display("hit default");
 	}	
 	
 	

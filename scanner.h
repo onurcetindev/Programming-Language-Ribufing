@@ -37,3 +37,4 @@
 #define STDIN 35
 #define STDOUT 36
 #define CHARACTER 37
+#define DEFAULT 38
