@@ -7,7 +7,7 @@ func ribufing(){
 			
 
 	boolean cond = true; 
-	while(cond){
+	repeat(cond){
 		kaf(c eql 3){
 			display(err);
 		}kafkef(c nql 3.5){
