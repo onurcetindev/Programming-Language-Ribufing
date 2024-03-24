@@ -4,12 +4,15 @@
 
 - [Ribufing Language Project](#ribufing-language-project)
   - [BNF Form](#bnf-form)
+  - [Description](#description)
+  - [Data Types](#data-types)
+  - [Control Flow](#control-flow)
+  - [Loop](#loop)
+  - [Functions](#functions)
+  - [Variables and Data Types](#variables-and-data-types)
+  - [IO](#inputoutput)
+  - [Operators](#operators)
   - [Running the Project](#running-the-project)
-  - [Operations](#operations)
-  - [Comments](#comments)
-  - [If Else Conditioning](#if-else-conditioning)
-  - [While Loop](#while-loop)
-  - [Function](#function)
 
 > #### CSE 334 - Programming Languages
 >
@@ -61,13 +64,13 @@ The following Backus-Naur Form (BNF) grammar defines the syntax of the language:
 <assignment> ::= <type> <identifier> <assign-op> <value> | <identifier> <assign-op> <value>
 
 <return-statement> ::= return <identifier> <semicolon> | return <function-call> <semicolon> | return <literal> <semicolon>
-<printing-statement> ::= display (<literal> | display <identifier> | display <function-call>) <semicolon> 
+<printing-statement> ::= display (<literal> | display <identifier> | display <function-call>) <semicolon>
 
 
 <identifier> ::= <string>
-<assign-op> ::= "=" 
+<assign-op> ::= "="
 <logic-operator> ::= and | or
-<comparison> ::= nql | eql 
+<comparison> ::= nql | eql
 <semicolon> ::= ;
 <type> ::= "boolean" | "double" | "string" | "int"
 <literal> ::= integer | double | string | boolean
@@ -80,13 +83,16 @@ The following Backus-Naur Form (BNF) grammar defines the syntax of the language:
 <digit> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
 ```
 
-
 # Description
 
 This describes a structured programming language with some object-oriented concepts like function definitions. Here's a breakdown of its key features:
+
 #### Data Types:
+
 - Supports basic data types: integers (int), doubles (double), strings (string), and booleans (boolean).
+
 #### Control Flow:
+
 - Offers if-else constructs with various combinations (using kaf, kef, kafkef) for conditional execution. The exact semantics of these keywords (e.g., kaf for simple if, kef for else and kafkef for if-else) would require additional information.
 - switch statements for multi-way branching based on an identifier's value (inspect, match, default).
 
@@ -98,14 +104,19 @@ inspect(number) {
 ```
 
 #### Loop
+
 - while loops for repeated execution based on a condition (repeat).
+
 ```c
 repeat(true) {
   display("It's true");
 }
 ```
+
 #### Functions:
-- Enables defining functions with names (func), arguments (argument-sequence), and a block of statements (block). 
+
+- Enables defining functions with names (func), arguments (argument-sequence), and a block of statements (block).
+
 ```c
 func greet(string name) {  // Function declaration
   display("Hello, " + name + "!");
@@ -113,15 +124,21 @@ func greet(string name) {  // Function declaration
 
 kaf (name eql "Alice") greet(name);  // Function call
 ```
+
 #### Variables and Data Types:
+
 - Variables are declared with a specific data type and assigned a name (variable-declaration).
 - Assignment of values is done using the assignment operator (=).
-Values and Expressions:
+  Values and Expressions:
 - Values can be numbers, strings, booleans, or the result of function calls.
 - Literals represent constant values.
+
 #### Input/Output:
+
 - Printing to the console is achieved using the display statement.
+
 #### Operators:
+
 - Supports comparison (nql - not equal, eql - equal) and logical (and, or) operators.
 
 ### Running The Project
@@ -130,5 +147,4 @@ Values and Expressions:
 make scanner
 ./scanner < example.rbf
 ```
-
 
